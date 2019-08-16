@@ -45,19 +45,20 @@ ________________________________________________________________________________
 #   (this is all commented out as I use Mac Terminal Profiles)
 #   from http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
 #   ------------------------------------------------------------
-   export CLICOLOR=1
-   export LSCOLORS=ExFxBxDxCxegedabagacad
+    export CLICOLOR=1
+    export LSCOLORS=ExFxBxDxCxegedabagacad
 #   export MINIO_USER="minio"
 #   export MINIO_ACCESS_KEY=minio
 #   export MINIO_SECRET_KEY=minio123
 #   ulimit -n 65536 200000
+
 #   -----------------------------
 #   2.  MAKE TERMINAL BETTER
 #   -----------------------------
-alias uu='clear;date;pwd;ls -FGtwAhp ~/;date'                           # Preferred JonSnow 'Home Shortcut' implementation
-alias gogo='clear;cd ~/go/src;clear;date;pwd;ls -FGtwAhp;date'                          # Preferred JonSnow 'Home Shortcut' implementation
+alias uu='clear;date;pwd;ls -FGtwAhp ~/;date'                                   # Preferred JonSnow 'Home Shortcut' implementation
+alias gogo='clear;cd ~/go/src;clear;date;pwd;ls -FGtwAhp;date'                  # Preferred JonSnow 'Home Shortcut' implementation
 alias ud='clear;cd ~/Dropbox;clear;date;pwd;ls -FGtwAhp'                        # Preferred JonSnow 'Dropbox Shortcut' implementation
-alias h='history | fzf' #fuzzy find of the history
+alias h='history | fzf' #fuzzy find of the history                              # Preferred JonSnow
 alias cp='cp -iv'                                                               # Preferred 'cp' implementation
 alias mv='mv -iv'                                                               # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                                                         # Preferred 'mkdir' implementation
@@ -67,7 +68,8 @@ alias cleandocker='docker rm $(docker ps -aq)'                                  
 alias uEdit='docker run -ti --rm -v $(pwd):/home/developer/workspace -e TERM=xterm jare/vim-bundle'
 alias ut='clear;date;ls -FGtwAhp;echo "---Current Folder---";pwd;echo "--------------------"'   # Preferred JonSnow 'ls' implementation
 alias pnl='cd ~/Dropbox/uPnl;clear;date;pwd;ls -FGtwAhp'                        # Preferred Dropbox directory
-#   Kubernetes Shortcuts
+
+# Kubernetes Shortcuts
 alias kgp='clear; echo "----------------------------"; date; echo "----------------------------"; kubectl get pods' #List all the active pods in Kubernetes
 alias kgs='clear; echo "----------------------------"; date; echo "----------------------------"; kubectl get services' #List all the active services in Kubernetes
 alias chl='clear;date;mc config host list'                                      # Preferred Dropbox directory
